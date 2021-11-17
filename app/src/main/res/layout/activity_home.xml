@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:background="@color/purple_200"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Customer Details"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_orange_light"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/primary_text_light"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Name"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bill"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/name"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Payment"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/bill"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/due"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dues"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/pay"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/due"
+        android:inputType="date"
+        />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/due"
+        android:layout_marginTop="80dp"
+        android:background="@color/design_default_color_primary_variant"
+        android:text="Add Customer"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:layout_marginTop="10dp"
+        android:background="@color/design_default_color_primary_variant"
+        android:text="Update Customer"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginTop="10dp"
+        android:background="@color/design_default_color_primary_variant"
+        android:text="Delete Customer"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:layout_marginTop="10dp"
+        android:background="@color/design_default_color_primary_variant"
+        android:text="View Customer"
+        android:textSize="24dp" />
+
+
+</RelativeLayout>
